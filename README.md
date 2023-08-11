@@ -46,3 +46,12 @@ Having gained an appreciation for the utility of these embeddings, the explorati
 - I like watching soccer matches
 
 The resultant output manifests as vectors, each comprising 4096 entries for every sentence. While visualizing these high-dimensional vectors might prove challenging, a method exists to condense them into two entries per sentence for convenient visualization. The ensuing plot captures this visualization.
+
+![image](https://github.com/ArunVigneshFAI/Sentence_Embeddings/assets/141916176/e3e8650f-a998-4697-8f46-1f04d9b4456c)
+
+An observed phenomenon is that the embedding adeptly encapsulates the core essence of the sentences, leading to the emergence of three distinct sentence clusters. Positioned in the upper-left quadrant are sentences of greetings, while the middle cluster pertains to discussions about individuals' dogs. In the lower-right corner, sentences relating to soccer are concentrated. An intriguing observation is that even sentences like "Hey, what's up?" and "Hello, how are you?" share no common words, yet the model discerns their shared meaning, illustrating the embedding's ability to capture nuanced semantic relationships.
+
+## Conclusion
+Word and sentence embeddings stand as foundational elements within the realm of LLMs. Serving as fundamental constructs of most language models, they facilitate the conversion of human language (words) into a computational format (numbers). This translation process adeptly captures the intricate web of word relationships, semantic nuances, and linguistic intricacies, translating them into numerical representations that can be manipulated through mathematical operations.
+
+Expanding on this notion, sentence embeddings can be broadened into language embeddings, where the numerical values associated with each sentence remain language-agnostic. These models prove highly advantageous for tasks such as translation, as well as for the search and comprehension of text across different languages.
