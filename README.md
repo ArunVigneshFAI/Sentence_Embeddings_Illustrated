@@ -22,13 +22,13 @@ The sentence "No, I am good!" would equate to the vector [0, 2, 2, 3]. However, 
 
 To address this limitation, sentence embeddings emerge as a solution. Analogous to word embeddings, sentence embeddings associate each sentence with a coherent numerical vector. Coherence ensures that similar sentences share similar vectors, diverse sentences possess distinct vectors, and crucially, each vector component signifies a specific aspect of the sentence, whether overt or subtle.
 
-![image](https://github.com/ArunVigneshFAI/Sentence_Embeddings/assets/141916176/4075a129-b761-4a74-bae6-708d72276b78)
+![image](https://github.com/ArunVigneshFAI/Sentence_Embeddings_Illustrated/assets/141916176/18886f91-5b9e-4e48-a7fd-e65941eee4f9)
 
 The LLM sentence embedding achieves precisely this objective. Leveraging advanced algorithms such as transformers and attention mechanisms, this embedding transforms each sentence into a vector composed of a lot of numerical values - let's say 4096 numerical values. This embedding approach has demonstrated remarkable performance.
 
 For illustrative purposes, a heatmap of the initial 10 entries of various sentences is provided below. Due to space limitations, the complete set of 4096 entries is truncated here.
 
-![image](https://github.com/ArunVigneshFAI/Sentence_Embeddings/assets/141916176/7bc0dcce-98b1-4110-84e2-1a5f47d34c4e)
+![image](https://github.com/ArunVigneshFAI/Sentence_Embeddings_Illustrated/assets/141916176/d6719f17-8428-4601-afaa-0d9577b59ae2)
 
 It's noteworthy that the presented sentences exhibit significant similarity. Notably, the three highlighted sentences convey almost identical meanings. Upon examining their corresponding vectors, it becomes evident that these vectors are also remarkably similar. This outcome aligns precisely with the intended function of an embedding.
 
@@ -47,7 +47,7 @@ Having gained an appreciation for the utility of these embeddings, the explorati
 
 The resultant output manifests as vectors, each comprising 4096 entries for every sentence. While visualizing these high-dimensional vectors might prove challenging, a method exists to condense them into two entries per sentence for convenient visualization. The ensuing plot captures this visualization.
 
-![image](https://github.com/ArunVigneshFAI/Sentence_Embeddings/assets/141916176/e3e8650f-a998-4697-8f46-1f04d9b4456c)
+![image](https://github.com/ArunVigneshFAI/Sentence_Embeddings_Illustrated/assets/141916176/e4d4d54a-b3ab-4d45-b6af-433a38b9753a)
 
 An observed phenomenon is that the embedding adeptly encapsulates the core essence of the sentences, leading to the emergence of three distinct sentence clusters. Positioned in the upper-left quadrant are sentences of greetings, while the middle cluster pertains to discussions about individuals' dogs. In the lower-right corner, sentences relating to soccer are concentrated. An intriguing observation is that even sentences like "Hey, what's up?" and "Hello, how are you?" share no common words, yet the model discerns their shared meaning, illustrating the embedding's ability to capture nuanced semantic relationships.
 
